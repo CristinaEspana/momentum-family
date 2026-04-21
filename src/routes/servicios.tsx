@@ -19,7 +19,12 @@ export const Route = createFileRoute("/servicios")({
 });
 
 const icons = [MessageCircle, Users, BookOpen, Heart];
-const tints = ["bg-brand-pink/40", "bg-brand-turquoise/40", "bg-brand-peach/50", "bg-brand-blue/30"];
+const tints = [
+  "bg-brand-pink/40",
+  "bg-brand-turquoise/40",
+  "bg-brand-peach/50",
+  "bg-brand-blue/30",
+];
 
 function ServiciosPage() {
   const { t } = useI18n();
@@ -44,7 +49,9 @@ function ServiciosPage() {
                 key={s.title}
                 className="rounded-3xl border border-border bg-card p-8 transition-all hover:shadow-[var(--shadow-soft)]"
               >
-                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${tints[i]}`}>
+                <div
+                  className={`flex h-12 w-12 items-center justify-center rounded-2xl ${tints[i]}`}
+                >
                   <Icon size={22} className="text-foreground" />
                 </div>
                 <h2 className="mt-5 font-serif text-2xl">{s.title}</h2>

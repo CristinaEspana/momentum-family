@@ -44,7 +44,9 @@ function Index() {
               {t.home.badge}
             </span>
             <h1 className="mt-5 font-serif text-4xl leading-[1.05] tracking-tight text-foreground md:text-6xl">
-              {t.home.title1} <em className="font-serif italic text-brand-blue">{t.home.titleEm}</em>{t.home.title2}
+              {t.home.title1}{" "}
+              <em className="font-serif italic text-brand-blue">{t.home.titleEm}</em>
+              {t.home.title2}
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-foreground/75 md:text-lg">
               {t.home.lead}
@@ -67,11 +69,7 @@ function Index() {
 
           <div className="relative mx-auto w-full max-w-md">
             <div className="relative aspect-square rounded-[2rem] bg-background/80 p-8 shadow-[var(--shadow-soft)] ring-1 ring-border">
-              <img
-                src={logo}
-                alt="Logo Momentum Family"
-                className="h-full w-full object-contain"
-              />
+              <img src={logo} alt="Logo Momentum Family" className="h-full w-full object-contain" />
               <div className="absolute -bottom-4 -right-4 h-20 w-20 rounded-2xl bg-brand-peach/70 blur-md" />
               <div className="absolute -top-5 -left-5 h-16 w-16 rounded-2xl bg-brand-turquoise/60 blur-md" />
             </div>
@@ -98,7 +96,9 @@ function Index() {
                 key={p.title}
                 className="group rounded-3xl border border-border bg-card p-7 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]"
               >
-                <div className={`flex h-12 w-12 items-center justify-center rounded-2xl ${pillarTints[i]}`}>
+                <div
+                  className={`flex h-12 w-12 items-center justify-center rounded-2xl ${pillarTints[i]}`}
+                >
                   <Icon size={22} className="text-foreground" />
                 </div>
                 <h3 className="mt-5 font-serif text-xl text-foreground">{p.title}</h3>
@@ -126,12 +126,8 @@ function Index() {
         <div className="overflow-hidden rounded-3xl bg-primary px-8 py-12 text-primary-foreground md:px-14 md:py-16">
           <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
             <div>
-              <h2 className="font-serif text-3xl tracking-tight md:text-4xl">
-                {t.home.ctaTitle}
-              </h2>
-              <p className="mt-3 max-w-xl text-primary-foreground/80">
-                {t.home.ctaText}
-              </p>
+              <h2 className="font-serif text-3xl tracking-tight md:text-4xl">{t.home.ctaTitle}</h2>
+              <p className="mt-3 max-w-xl text-primary-foreground/80">{t.home.ctaText}</p>
             </div>
             <Link
               to="/contacto"
