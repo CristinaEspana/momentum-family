@@ -29,9 +29,7 @@ function NosotrosPage() {
           <p className="text-sm font-medium uppercase tracking-widest text-brand-blue">
             {t.about.kicker}
           </p>
-          <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
-            {t.about.title}
-          </h1>
+          <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">{t.about.title}</h1>
           <p className="mt-5 text-foreground/75">{t.about.p1}</p>
           <p className="mt-4 text-foreground/75">{t.about.p2}</p>
         </div>

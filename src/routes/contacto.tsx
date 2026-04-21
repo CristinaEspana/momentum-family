@@ -11,8 +11,7 @@ export const Route = createFileRoute("/contacto")({
       { title: "Contacto — Momentum Family" },
       {
         name: "description",
-        content:
-          "Escríbenos y conversemos sobre cómo podemos acompañar a tu familia en Canadá.",
+        content: "Escríbenos y conversemos sobre cómo podemos acompañar a tu familia en Canadá.",
       },
     ],
   }),
