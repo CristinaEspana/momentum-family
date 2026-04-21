@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { useI18n } from "@/lib/i18n";
 import logo from "@/assets/momentum-logo.png";
 
 export const Route = createFileRoute("/nosotros")({
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/nosotros")({
 });
 
 function NosotrosPage() {
+  const { t } = useI18n();
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -25,21 +27,13 @@ function NosotrosPage() {
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-24">
         <div>
           <p className="text-sm font-medium uppercase tracking-widest text-brand-blue">
-            Nuestra historia
+            {t.about.kicker}
           </p>
           <h1 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">
-            Un proyecto nacido del corazón de una familia migrante.
+            {t.about.title}
           </h1>
-          <p className="mt-5 text-foreground/75">
-            Momentum Family surge para crear el espacio que nos hubiera gustado
-            encontrar al llegar a Canadá: un lugar en español, cercano y honesto,
-            donde las familias puedan sentirse acompañadas en cada paso.
-          </p>
-          <p className="mt-4 text-foreground/75">
-            Creemos en la crianza consciente, en la fuerza de la comunidad y en
-            el valor de compartir el camino con quienes te entienden sin
-            necesidad de traducir.
-          </p>
+          <p className="mt-5 text-foreground/75">{t.about.p1}</p>
+          <p className="mt-4 text-foreground/75">{t.about.p2}</p>
         </div>
 
         <div className="relative mx-auto w-full max-w-sm">
@@ -51,11 +45,7 @@ function NosotrosPage() {
 
       <section className="mx-auto max-w-5xl px-5 pb-20">
         <div className="grid gap-6 md:grid-cols-3">
-          {[
-            { title: "Cercanía", text: "Hablamos tu idioma y conocemos tu contexto." },
-            { title: "Profesionalismo", text: "Acompañamiento con base, ética y constancia." },
-            { title: "Comunidad", text: "Tejemos red entre familias que se sostienen." },
-          ].map((v) => (
+          {t.about.values.map((v) => (
             <div key={v.title} className="rounded-3xl border border-border bg-card p-7">
               <h3 className="font-serif text-xl text-foreground">{v.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{v.text}</p>
