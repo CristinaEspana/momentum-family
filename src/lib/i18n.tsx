@@ -27,11 +27,21 @@ export const translations = {
       pillarsKicker: "Lo que nos mueve",
       pillarsTitle: "Tres pilares para crecer en familia.",
       pillars: [
-        { title: "Crianza consciente", text: "Espacios de reflexión y herramientas prácticas para el día a día con tus hijos." },
-        { title: "Comunidad cercana", text: "Una red de familias hispanohablantes que comparten su camino en Canadá." },
-        { title: "Mentoría individual", text: "Acompañamiento personalizado en español para los momentos que lo necesitas." },
+        {
+          title: "Crianza consciente",
+          text: "Espacios de reflexión y herramientas prácticas para el día a día con tus hijos.",
+        },
+        {
+          title: "Comunidad cercana",
+          text: "Una red de familias hispanohablantes que comparten su camino en Canadá.",
+        },
+        {
+          title: "Mentoría individual",
+          text: "Acompañamiento personalizado en español para los momentos que lo necesitas.",
+        },
       ],
-      quote: "“Criar lejos de casa es posible cuando encuentras un refugio cálido donde tu idioma, tu historia y tu familia tienen lugar.”",
+      quote:
+        "“Criar lejos de casa es posible cuando encuentras un refugio cálido donde tu idioma, tu historia y tu familia tienen lugar.”",
       ctaTitle: "¿Lista para dar el siguiente paso?",
       ctaText: "Agenda una conversación inicial gratuita y descubre cómo podemos acompañarte.",
       ctaButton: "Empezar ahora",
@@ -42,10 +52,22 @@ export const translations = {
       lead: "Cada propuesta nace de la escucha y de la experiencia compartida. Elige el formato que mejor se adapte a tu momento.",
       cta: "Hablemos de tu familia",
       items: [
-        { title: "Mentoría individual", desc: "Sesiones 1 a 1 en español para acompañarte en momentos clave de tu maternidad o paternidad." },
-        { title: "Círculos de familias", desc: "Encuentros mensuales para compartir, escuchar y construir comunidad." },
-        { title: "Talleres temáticos", desc: "Crianza respetuosa, bilingüismo, transiciones y vida en Canadá." },
-        { title: "Acompañamiento emocional", desc: "Espacios seguros para procesar la migración, la maternidad y la identidad." },
+        {
+          title: "Mentoría individual",
+          desc: "Sesiones 1 a 1 en español para acompañarte en momentos clave de tu maternidad o paternidad.",
+        },
+        {
+          title: "Círculos de familias",
+          desc: "Encuentros mensuales para compartir, escuchar y construir comunidad.",
+        },
+        {
+          title: "Talleres temáticos",
+          desc: "Crianza respetuosa, bilingüismo, transiciones y vida en Canadá.",
+        },
+        {
+          title: "Acompañamiento emocional",
+          desc: "Espacios seguros para procesar la migración, la maternidad y la identidad.",
+        },
       ],
     },
     about: {
@@ -112,7 +134,8 @@ export const translations = {
       total: "Total",
       checkout: "Ir al pago",
       remove: "Quitar",
-      notice: "Pasarela de pago disponible muy pronto. Mientras tanto, escríbenos por WhatsApp para reservar.",
+      notice:
+        "Pasarela de pago disponible muy pronto. Mientras tanto, escríbenos por WhatsApp para reservar.",
       categoryEvent: "Evento",
       categoryCourse: "Curso",
       courses: [
@@ -152,10 +175,12 @@ export const translations = {
     },
     whatsapp: {
       label: "Chatea con nosotros",
-      message: "Hola Momentum Family 👋, me gustaría agendar una cita y resolver algunas inquietudes.",
+      message:
+        "Hola Momentum Family 👋, me gustaría agendar una cita y resolver algunas inquietudes.",
     },
     footer: {
-      tagline: "Acompañamos a familias hispanohablantes en Canadá con apoyo cálido, cercano y profesional en cada etapa de su camino.",
+      tagline:
+        "Acompañamos a familias hispanohablantes en Canadá con apoyo cálido, cercano y profesional en cada etapa de su camino.",
       navTitle: "Navegación",
       contactTitle: "Contacto",
       country: "Canadá",
@@ -185,11 +210,21 @@ export const translations = {
       pillarsKicker: "What moves us",
       pillarsTitle: "Three pillars to grow as a family.",
       pillars: [
-        { title: "Conscious parenting", text: "Spaces for reflection and practical tools for everyday life with your children." },
-        { title: "Close-knit community", text: "A network of Spanish-speaking families sharing their journey in Canada." },
-        { title: "One-on-one mentorship", text: "Personalized guidance in Spanish for the moments when you need it most." },
+        {
+          title: "Conscious parenting",
+          text: "Spaces for reflection and practical tools for everyday life with your children.",
+        },
+        {
+          title: "Close-knit community",
+          text: "A network of Spanish-speaking families sharing their journey in Canada.",
+        },
+        {
+          title: "One-on-one mentorship",
+          text: "Personalized guidance in Spanish for the moments when you need it most.",
+        },
       ],
-      quote: "“Raising children far from home is possible when you find a warm shelter where your language, your story and your family have a place.”",
+      quote:
+        "“Raising children far from home is possible when you find a warm shelter where your language, your story and your family have a place.”",
       ctaTitle: "Ready for the next step?",
       ctaText: "Schedule a free intro call and discover how we can support you.",
       ctaButton: "Get started",
@@ -200,10 +235,22 @@ export const translations = {
       lead: "Every offering is born from listening and shared experience. Pick the format that best fits your moment.",
       cta: "Let's talk about your family",
       items: [
-        { title: "One-on-one mentorship", desc: "1:1 sessions in Spanish to support you through key moments of motherhood or fatherhood." },
-        { title: "Family circles", desc: "Monthly gatherings to share, listen and build community." },
-        { title: "Thematic workshops", desc: "Respectful parenting, bilingualism, transitions and life in Canada." },
-        { title: "Emotional support", desc: "Safe spaces to process migration, parenthood and identity." },
+        {
+          title: "One-on-one mentorship",
+          desc: "1:1 sessions in Spanish to support you through key moments of motherhood or fatherhood.",
+        },
+        {
+          title: "Family circles",
+          desc: "Monthly gatherings to share, listen and build community.",
+        },
+        {
+          title: "Thematic workshops",
+          desc: "Respectful parenting, bilingualism, transitions and life in Canada.",
+        },
+        {
+          title: "Emotional support",
+          desc: "Safe spaces to process migration, parenthood and identity.",
+        },
       ],
     },
     about: {
@@ -270,7 +317,8 @@ export const translations = {
       total: "Total",
       checkout: "Go to checkout",
       remove: "Remove",
-      notice: "Online payments are coming soon. In the meantime, message us on WhatsApp to reserve.",
+      notice:
+        "Online payments are coming soon. In the meantime, message us on WhatsApp to reserve.",
       categoryEvent: "Event",
       categoryCourse: "Course",
       courses: [
@@ -313,7 +361,8 @@ export const translations = {
       message: "Hi Momentum Family 👋, I'd love to book a session and ask a few questions.",
     },
     footer: {
-      tagline: "We support Spanish-speaking families in Canada with warm, close and professional care at every stage of their journey.",
+      tagline:
+        "We support Spanish-speaking families in Canada with warm, close and professional care at every stage of their journey.",
       navTitle: "Navigation",
       contactTitle: "Contact",
       country: "Canada",
@@ -331,7 +380,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("es");
 
   useEffect(() => {
-    const stored = typeof window !== "undefined" ? (localStorage.getItem("mf_lang") as Lang | null) : null;
+    const stored =
+      typeof window !== "undefined" ? (localStorage.getItem("mf_lang") as Lang | null) : null;
     if (stored === "es" || stored === "en") setLangState(stored);
   }, []);
 

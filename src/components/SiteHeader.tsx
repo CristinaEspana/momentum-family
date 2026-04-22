@@ -14,6 +14,7 @@ export function SiteHeader() {
     { to: "/eventos", label: t.nav.events },
     { to: "/tienda", label: t.nav.shop },
     { to: "/nosotros", label: t.nav.about },
+    { to: "/login", label: t.nav.login },
     { to: "/contacto", label: t.nav.contact },
   ] as const;
 
