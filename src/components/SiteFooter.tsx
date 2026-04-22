@@ -24,6 +24,8 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li><Link to="/" className="hover:text-foreground">{t.nav.home}</Link></li>
             <li><Link to="/servicios" className="hover:text-foreground">{t.nav.services}</Link></li>
+            <li><Link to="/eventos" className="hover:text-foreground">{t.nav.events}</Link></li>
+            <li><Link to="/tienda" className="hover:text-foreground">{t.nav.shop}</Link></li>
             <li><Link to="/nosotros" className="hover:text-foreground">{t.nav.about}</Link></li>
             <li><Link to="/contacto" className="hover:text-foreground">{t.nav.contact}</Link></li>
           </ul>

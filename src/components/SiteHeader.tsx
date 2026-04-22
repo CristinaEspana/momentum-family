@@ -11,6 +11,8 @@ export function SiteHeader() {
   const nav = [
     { to: "/", label: t.nav.home },
     { to: "/servicios", label: t.nav.services },
+    { to: "/eventos", label: t.nav.events },
+    { to: "/tienda", label: t.nav.shop },
     { to: "/nosotros", label: t.nav.about },
     { to: "/contacto", label: t.nav.contact },
   ] as const;
@@ -25,7 +27,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {nav.map((item) => (
             <Link
               key={item.to}

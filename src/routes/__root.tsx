@@ -1,5 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { I18nProvider } from "@/lib/i18n";
+import { CartProvider } from "@/lib/cart";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 import appCss from "../styles.css?url";
 
@@ -68,7 +70,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <I18nProvider>
-      <Outlet />
+      <CartProvider>
+        <Outlet />
+        <WhatsAppButton />
+      </CartProvider>
     </I18nProvider>
   );
 }
