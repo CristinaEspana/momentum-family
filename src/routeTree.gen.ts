@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TiendaRouteImport } from './routes/tienda'
 import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as NosotrosRouteImport } from './routes/nosotros'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as EventosRouteImport } from './routes/eventos'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const ServiciosRoute = ServiciosRouteImport.update({
 const NosotrosRoute = NosotrosRouteImport.update({
   id: '/nosotros',
   path: '/nosotros',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventosRoute = EventosRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/eventos': typeof EventosRoute
+  '/login': typeof LoginRoute
   '/nosotros': typeof NosotrosRoute
   '/servicios': typeof ServiciosRoute
   '/tienda': typeof TiendaRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/eventos': typeof EventosRoute
+  '/login': typeof LoginRoute
   '/nosotros': typeof NosotrosRoute
   '/servicios': typeof ServiciosRoute
   '/tienda': typeof TiendaRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/eventos': typeof EventosRoute
+  '/login': typeof LoginRoute
   '/nosotros': typeof NosotrosRoute
   '/servicios': typeof ServiciosRoute
   '/tienda': typeof TiendaRoute
@@ -78,16 +87,25 @@ export interface FileRouteTypes {
     | '/'
     | '/contacto'
     | '/eventos'
+    | '/login'
     | '/nosotros'
     | '/servicios'
     | '/tienda'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contacto' | '/eventos' | '/nosotros' | '/servicios' | '/tienda'
+  to:
+    | '/'
+    | '/contacto'
+    | '/eventos'
+    | '/login'
+    | '/nosotros'
+    | '/servicios'
+    | '/tienda'
   id:
     | '__root__'
     | '/'
     | '/contacto'
     | '/eventos'
+    | '/login'
     | '/nosotros'
     | '/servicios'
     | '/tienda'
@@ -97,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactoRoute: typeof ContactoRoute
   EventosRoute: typeof EventosRoute
+  LoginRoute: typeof LoginRoute
   NosotrosRoute: typeof NosotrosRoute
   ServiciosRoute: typeof ServiciosRoute
   TiendaRoute: typeof TiendaRoute
@@ -123,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/nosotros'
       fullPath: '/nosotros'
       preLoaderRoute: typeof NosotrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/eventos': {
@@ -153,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactoRoute: ContactoRoute,
   EventosRoute: EventosRoute,
+  LoginRoute: LoginRoute,
   NosotrosRoute: NosotrosRoute,
   ServiciosRoute: ServiciosRoute,
   TiendaRoute: TiendaRoute,
